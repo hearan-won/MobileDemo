@@ -17,8 +17,7 @@ public class NestedLayoutActivity extends AppCompatActivity {
         // go back to home page when back button is clicked
         View backButton = findViewById(R.id.backButton);
         backButton.setOnClickListener(v -> {
-            Intent i = new Intent(NestedLayoutActivity.this, MainActivity.class);
-            startActivity(i);
+            finish();
         });
 
     }
